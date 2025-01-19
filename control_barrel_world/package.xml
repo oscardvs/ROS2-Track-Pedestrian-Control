@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>control_barrel_world</name>
+  <version>0.0.0</version>
+  <description>Control package for barrel world</description>
+  <maintainer email="o.a.e.devos@student.tudelft.nl">oskrt</maintainer>
+  <license>TODO: License declaration</license>
+
+  <!-- Build tool dependency -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- Build dependencies -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>vision_msgs</build_depend>
+
+  <!-- Execution dependencies -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>vision_msgs</exec_depend>
+
+  <!-- Export -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

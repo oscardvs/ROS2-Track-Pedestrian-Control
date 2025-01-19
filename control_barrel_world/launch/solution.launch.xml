@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Include rsp_lab4.launch.xml from mirte_gazebo package -->
+  <include file="$(find-pkg-share mirte_gazebo)/launch/rsp_lab4.launch.xml" />
+  
+  <!-- Run the opencv_person_detector_node -->
+  <node
+    pkg="opencv_person_detector"
+    exec="opencv_person_detector_node"
+    name="opencv_person_detector_node"
+    output="screen">
+  </node>
+
+  <!-- Run the control_barrel_world_node -->
+  <node
+    pkg="control_barrel_world"
+    exec="control_barrel_world_node"
+    name="control_barrel_world_node"
+    output="screen">
+  </node>
+</launch>
+
+
