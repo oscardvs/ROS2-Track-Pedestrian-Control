@@ -1,0 +1,9 @@
+<launch>
+  <node
+    pkg="opencv_person_detector"
+    exec="opencv_person_detector_node"
+    name="opencv_person_detector_node"
+    output="screen">
+  </node>
+</launch>
+
